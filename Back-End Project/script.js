@@ -15,9 +15,9 @@ MongoClient.connect('mongodb+srv://ashwin:aashu12@atlascluster.avls3ca.mongodb.n
     const scrollPosition = window.scrollY;
   
     if (scrollPosition > 100) {
-      navbar.classList.add('fixed-nav');
+      navbar.classList.add('static-nav');
     } else {
-      navbar.classList.remove('fixed-nav');
+      navbar.classList.remove('static-nav');
     }
   });
   
