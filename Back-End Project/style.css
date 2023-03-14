@@ -27,12 +27,12 @@ body{
 
 section{
     padding:1rem 15%;
-    min-height: 51em;
+    min-height: 51vh;
 }
 
 .heading{
     font-size: 5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     color:#111;
     text-transform: uppercase;
 }
@@ -85,6 +85,11 @@ header .logo span{
     color:var(--main-color);
 }
 
+.navbar {
+    position: static;
+  }
+  
+
 header .navbar a{
     display: block;
     font-size: 1.5rem;
@@ -108,7 +113,7 @@ header .follow a:hover{
 }
 
 #menu-bars{
-    position: fixed;
+    position: static;
     top:1.5rem; 
     right: 1.5rem;
     z-index: 1000;
