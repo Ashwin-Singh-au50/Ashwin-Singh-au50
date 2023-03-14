@@ -10,6 +10,18 @@ MongoClient.connect('mongodb+srv://ashwin:aashu12@atlascluster.avls3ca.mongodb.n
   if (err) throw err;
   console.log('Connected to MongoDB database...');
 
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    const scrollPosition = window.scrollY;
+  
+    if (scrollPosition > 100) {
+      navbar.classList.add('fixed-nav');
+    } else {
+      navbar.classList.remove('fixed-nav');
+    }
+  });
+  
+
   // Set up Express routes 
   app.get('/', (req, res) => {
     const db = client.db('my_database');
